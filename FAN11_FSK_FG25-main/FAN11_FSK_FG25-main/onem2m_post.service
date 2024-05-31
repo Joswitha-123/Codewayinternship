@@ -1,0 +1,11 @@
+[Unit]
+Description=onem2m_post
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/wisun/Desktop/wisun/service/onem2m_post.py
+User=wisun
+
+[Install]
+WantedBy=multi-user.target
